@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;    
+  font-family: 'Roboto', sans-serif; 
 }
 
 #app {
@@ -15,13 +15,13 @@ body {
 
 #container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1400px;
   min-width: 1000px;
 }
 
 /* HEADER */
 #header {
-  background-color: rgb(159, 197, 223);
+  background-color: beige;
   height: 300px;
   display: flex;  
   align-items: flex-end;
@@ -64,7 +64,8 @@ body {
 
 /* FOOTER */
 #footer {
-  background-color: rgb(159, 197, 223);
+  /* background-color: rgb(159, 197, 223); */
+  background-color: beige;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -120,18 +121,34 @@ body {
 }
 
 /* FILTERS */
-.domain-filters {
-  margin: 1em 0;
-}
-
-.domain-label {
-  margin-right: 2em;
-}
-
 .upper-filter-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.domain-list {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+}
+
+.domain-selected-button,
+.domain-unselected-button {
+  width: 80px;
+  padding: 0.2em;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.domain-unselected-button:hover {
+  color: gray;
+}
+
+.domain-selected-button {
+  text-decoration: underline;
 }
 
 .expand-button {
@@ -146,17 +163,15 @@ body {
   background-color: gray;
 }
 
-
-
-
-.tech-filter {
+.tech-filter-form {
   display: flex;
   gap: 0.5em;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 1em 0;
 }
 
-.tech-label {
+.tech-filter-label {
   border: 2px solid black;
   border-radius: 10px;
   padding: 0.5em;
@@ -164,31 +179,47 @@ body {
   display: flex;
   gap: 0.5em;
   align-items: center;
-  width: 150px;
+  width: 120px;
 }
 
-.tech-label:hover {
+.tech-filter-label:hover {
   cursor: pointer;
   border-color: rgb(117, 2, 2);
   background-color: rgb(215, 231, 241);
 }
 
-.tech-radio {
-  opacity: 0;
-  width: 0;
+.tech-filter-checkbox {
+  display: none;
 }
 
-.tech-radio:checked + label {
-  border-color: rgb(117, 2, 2);
-  background-color: rgb(215, 231, 241);
-}
-
-.tech-icon {
-  font-size: 2em;
+.tech-filter-item {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 /* ITEMS */
-.items {
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(236, 224, 209);
+}
+
+.item-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -197,12 +228,54 @@ body {
 }
 
 .item {
-  width: 300px;  
-  height: 400px;
+  width: 400px;  
+  height: 500px;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: rgb(231, 210, 210);
+  background-color: beige;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px black;
+}
+
+.item-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-image {
+  height: 200px;
+}
+
+.item-technologies,
+.item-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 2em;
+}
+
+.item-links a {
+  background-color: black;
+  color: white;
+  padding: 0.1em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.item-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.item-links a:visited {
+  color: rgb(196, 193, 193);
 }
 
 
@@ -210,7 +283,6 @@ body {
   #container {
     max-width: 1024px;
     min-width: 600px;
-    background-color: bisque;
   }
   
   .personal-info h1 {
@@ -247,7 +319,6 @@ body {
 
 @media (max-width: 600px) {
   #header {
-    background-color: aquamarine;
     flex-flow: column-reverse;
     height: auto;
     margin-top: -20px;
@@ -256,7 +327,6 @@ body {
   #container {
     max-width: 600px;
     min-width: 500px;
-    background-color: brown;
   }
 
   .blog-and-YT-links {
@@ -275,5 +345,12 @@ body {
     align-items: center;
     gap: 0.5em;
   }
+
+  .domain-list {
+    gap: 1em;
+  }
   
+  .upper-filter-bar {
+    padding: 0 1em;;
+  }
 }

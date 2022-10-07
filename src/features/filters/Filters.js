@@ -1,40 +1,80 @@
 import React from 'react'
 import '../../style.css'
+import { DomainFilters, TechFilters } from './filtersSlice'
+import { TechFilterIcons } from '../../data'
+
+const DomainFilter = ({ value: domain, onChange }) => {
+  const filters = Object.keys(DomainFilters).map((key) => {    
+    const value = DomainFilters[key]
+    const handleClick = () => onChange(value)
+    const className = value === domain ? 'domain-selected-button' : 'domain-unselected-button'
+    
+    return (
+      <li key={value}>
+        <button className={className} onClick={handleClick}>
+          {key}
+        </button>
+      </li>
+    )
+  })
+
+  return (
+    <ul className='domain-list'>{filters}</ul>
+  )
+}
 
 
-import { BsFacebook, BsGithub, BsTelephone } from 'react-icons/bs'
-import { AiFillAmazonCircle, AiFillHtml5, AiOutlineMail } from 'react-icons/ai'
-import { SiUdemy, SiSkillshare, SiTypescript, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender } from 'react-icons/si'
-import { IoLogoYoutube, IoLogoFirebase } from 'react-icons/io'
-import { DiCss3, DiMongodb } from 'react-icons/di'
-import { TbBrandJavascript } from 'react-icons/tb'
-import { FaNodeJs, FaGitAlt, FaNpm, FaFlagUsa } from 'react-icons/fa'
+const TechFilter = ({ value: techs, onChange }) => {
+  const filters = TechFilters.map((tech) => {
+    const checked = techs.includes(tech)
+    const handleChange = () => {
+      const changeType = checked ? 'removed' : 'added'
+      onChange(tech, changeType)
+    }
+
+    return (
+      <label className='tech-filter-label' key={tech}>
+        <input
+          className='tech-filter-checkbox'
+          type='checkbox'
+          name={tech}
+          checked={checked}
+          onChange={handleChange}
+        />        
+        <div className="tech-filter-item">
+          {TechFilterIcons[tech]}
+          {tech}
+        </div>
+      </label>
+    )
+  })
+
+  return (
+    <div>
+      <form className='tech-filter-form'>{filters}</form>
+    </div>
+  )
+}
 
 export default function Filters() {
+  const domain = DomainFilters.All
+  const techs = []
+
+  const onDomainChange = (domain) => {
+    console.log('domain: ', domain)
+  }
+
+  const onTechChange = (tech, changeType) => {
+    console.log('tech: ', { tech, changeType })
+  }
+  
   return (
     <div id='filters'>      
       <div className='upper-filter-bar'>
-        <div className="domain-filters">
-          <input id='domain-filter-all' type="radio" name='domain' className='domain-radio' value='all' checked />
-          <label htmlFor='domain-filter-all' className="domain-label">
-            All
-          </label>
-          <input id='domain-filter-coding' type="radio" name='domain' className='domain-radio' value='coding' />
-          <label htmlFor='domain-filter-coding' className="domain-label">
-            Coding
-          </label>
-          <input id='domain-filter-english' type="radio" name='domain' className='domain-radio' value='english' />
-          <label htmlFor='domain-filter-english' className="domain-label">
-            English
-          </label>
-        </div>
-        <div className="all-expanded">
-          <button className="expand-button">Expand all sections</button>
-        </div>
+        <DomainFilter value={domain} onChange={onDomainChange} />
+        <button className="expand-button">Expand all sections</button>
       </div>
-      <div className="tech-filter">
-
-      </div>
+      <TechFilter value={techs} onChange={onTechChange} />
     </div>
   )
 }

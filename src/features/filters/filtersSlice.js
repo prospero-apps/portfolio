@@ -1,10 +1,12 @@
 import data from "../../data";
 
-// export const DomainFilters = {
-//   All: 'all',
-//   Coding: 'coding',
-//   English: 'english'
-// }
+export const DomainFilters = {
+  All: 'all',
+  Coding: 'coding',
+  English: 'english'
+}
+
+export const TechFilters = ['html', 'css', 'javascript', 'webpack', 'react', 'redux', 'jest', 'firebase', 'mongodb', 'nodejs', 'express', 'python', 'blender']
 
 const initialState = data.filters
 

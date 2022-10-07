@@ -26,6 +26,42 @@ import tensesCourseImage from './images/courses/English Tenses Course.png'
 import panda3DMagazineImage from './images/magazines/Your Panda3D Magazine.png'
 import aeMagazineImage from './images/magazines/Your American English Magazine.png'
 
+
+import { BsFacebook, BsGithub, BsTelephone } from 'react-icons/bs'
+import { AiFillAmazonCircle, AiFillHtml5, AiOutlineMail } from 'react-icons/ai'
+import { SiUdemy, SiSkillshare, SiFirebase, SiTypescript, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender } from 'react-icons/si'
+import { IoLogoYoutube, IoLogoFirebase } from 'react-icons/io'
+import { DiCss3, DiMongodb } from 'react-icons/di'
+import { TbBrandJavascript } from 'react-icons/tb'
+import { FaNodeJs, FaGitAlt, FaNpm, FaFlagUsa } from 'react-icons/fa'
+import { CgWebsite } from 'react-icons/cg'
+
+
+export const TechFilterIcons = {
+  'html' : <AiFillHtml5 />,
+  'css' : <DiCss3 />, 
+  'javascript' : <TbBrandJavascript />, 
+  'webpack' : <SiWebpack />, 
+  'react' : <SiReact />, 
+  'redux' : <SiRedux />, 
+  'jest' : <SiJest />, 
+  'firebase' : <SiFirebase />,
+  'mongodb' : <DiMongodb />, 
+  'nodejs' : <FaNodeJs />, 
+  'express' : <SiExpress />,
+  'python' : <SiPython />,
+  'blender' : <SiBlender />,
+  'english' : <FaFlagUsa />
+}
+
+export const LinkIcons = {
+  'github' : <BsGithub />,
+  'live' : <CgWebsite />,
+  'amazon' : <AiFillAmazonCircle />,
+  'udemy' : <SiUdemy />,
+  'skillshare' : <SiSkillshare />
+}
+
 const data = {
   sections: [
     {
@@ -36,7 +72,7 @@ const data = {
         {
           id: 0,
           title: 'Recipes',
-          image: {recipesImage},
+          image: recipesImage,
           description: "This is my first web project, a very basic one, with just some HTML and no CSS or JavaScript. There are just a couple links that you can follow to see some recipes (image, description, ingredients and steps).",
           links: [
             { url: 'https://github.com/prospero-apps/odin-recipes', destination: 'github' },
@@ -47,7 +83,7 @@ const data = {
         {
           id: 1,
           title: 'Landing Page',
-          image: {landingPageImage},
+          image: landingPageImage,
           description: "This is my second project, this time with some CSS, but still no JavaScript, so the website is not functional at all.",
           links: [
             { url: 'https://github.com/prospero-apps/landing-page', destination: 'github' },
@@ -58,7 +94,7 @@ const data = {
         {
           id: 2,
           title: 'Rock Paper Scissors',
-          image: {rockPaperScissorsImage},
+          image: rockPaperScissorsImage,
           description: "In this third project I finally added some simple JavaScript, as a script inside the HTML file. The styling is not optimal. Anyway, simple as it is, the game is functional.",
           links: [
             { url: 'https://github.com/prospero-apps/paper-rock-scissors', destination: 'github' },
@@ -69,7 +105,7 @@ const data = {
         {
           id: 3,
           title: 'Etch A Sketch',
-          image: {etchASketchImage},
+          image: etchASketchImage,
           description: "This is a sort of painting app when you can draw by hovering your mouse over a canvas of squared. They're then filled in with a random color. You can also change the resolution.",
           links: [
             { url: 'https://github.com/prospero-apps/etch-a-sketch', destination: 'github' },
@@ -80,7 +116,7 @@ const data = {
         {
           id: 4,
           title: 'Calculator',
-          image: {calculatorImage},
+          image: calculatorImage,
           description: "Yet another basic, but functional app with some basic JavaScript. You can use this calculator to perform all basic arithmetic operations. You can also use floating-point and negative numbers.",
           links: [
             { url: 'https://github.com/prospero-apps/calculator', destination: 'github' },
@@ -91,7 +127,7 @@ const data = {
         {
           id: 5,
           title: 'Sign-up Form',
-          image: {signupFormImage},
+          image: signupFormImage,
           description: "This is a dummy sign-up form with data validation. All you have to do is just fill in a couple of fields and read the error message if you input no or wrong data.",
           links: [
             { url: 'https://github.com/prospero-apps/signup-form', destination: 'github' },
@@ -102,7 +138,7 @@ const data = {
         {
           id: 6,
           title: 'Admin Dashboard',
-          image: {adminDashboardImage},
+          image: adminDashboardImage,
           description: "This is just a dummy dashboard with links that lead nowhere. Here the grid element is implemented to visually organize the page. The code is pretty repetitive, though.",
           links: [
             { url: 'https://github.com/prospero-apps/admin-dashboard', destination: 'github' },
@@ -113,7 +149,7 @@ const data = {
         {
           id: 7,
           title: 'Library',
-          image: {libraryImage},
+          image: libraryImage,
           description: "This is an online library without a backend. You can view books (title, author, year of publication, language), remove existing books or add new ones, mark books as read. You can also view some statistics.",
           links: [
             { url: 'https://github.com/prospero-apps/library', destination: 'github' },
@@ -124,7 +160,7 @@ const data = {
         {
           id: 8,
           title: 'Tic-Tac-Toe',
-          image: {ticTacToeImage},
+          image: ticTacToeImage,
           description: "This version of the popular game can be played between two humans or against the computer. The scores are displayed and updated after each round. A round may end up tied.",
           links: [
             { url: 'https://github.com/prospero-apps/Tic-Tac-Toe', destination: 'github' },
@@ -135,7 +171,7 @@ const data = {
         {
           id: 9,
           title: 'Restaurant Page',
-          image: {restaurantPageImage},
+          image: restaurantPageImage,
           description: "This is my first project with webpack. Just a simple restaurant page where you can view a menu and contact information.",
           links: [
             { url: 'https://github.com/prospero-apps/restaurant-page', destination: 'github' },
@@ -146,7 +182,7 @@ const data = {
         {
           id: 10,
           title: 'Todo List',
-          image: {todoListImage},
+          image: todoListImage,
           description: 'You can create new lists and add todos to them. You can check as completed, edit and delete the todos as well. You can see all the lists, just the items for today or for this week. The numbers of todos in each list are also displayed.',
           links: [
             { url: 'https://github.com/prospero-apps/todo-list', destination: 'github' },
@@ -157,7 +193,7 @@ const data = {
         {
           id: 11,
           title: 'Weather App',
-          image: {weatherAppImage},
+          image: weatherAppImage,
           description: "Using this application you can check the weather in any major city around the globe. The app uses asynchronous JavaScript and calls to APIs.",
           links: [
             { url: 'https://github.com/prospero-apps/weather-app', destination: 'github' },
@@ -168,7 +204,7 @@ const data = {
         {
           id: 12,
           title: 'Battleship',
-          image: {battleshipImage},
+          image: battleshipImage,
           description: "This is just another version of the popular game. You place your ships on a board and then play against the computer. In this project there are some tests written with Jest.",
           links: [
             { url: 'https://github.com/prospero-apps/battleship', destination: 'github' },
@@ -179,7 +215,7 @@ const data = {
         {
           id: 13,
           title: 'CV Project',
-          image: {cvProjectImage},
+          image: cvProjectImage,
           description: "This is my first React project. In this app you can fill in a form with your personal information (like name, address, experience and education) to create a CV. You can also upload a photo. There's also a preview of the CV.",
           links: [
             { url: 'https://github.com/prospero-apps/cv-project', destination: 'github' },
@@ -190,7 +226,7 @@ const data = {
         {
           id: 14,
           title: 'Memory Card',
-          image: {memoryCardImage},
+          image: memoryCardImage,
           description: "In this application your task is to click on images, which keep changing their positions each time you click on one of them. You mustn't click on any image more than once.",
           links: [
             { url: 'https://github.com/prospero-apps/memory-card-react', destination: 'github' },
@@ -201,7 +237,7 @@ const data = {
         {
           id: 15,
           title: 'Store',
-          image: {storeImage},
+          image: storeImage,
           description: "This is an online store with some dummy product data from an API call. The app uses React routing to take you to the Home page, Products page and About page. You can also see the Details pages of the individual products. A shopping cart is implemented as well.",
           links: [
             { url: 'https://github.com/prospero-apps/store-react', destination: 'github' },
@@ -212,7 +248,7 @@ const data = {
         {
           id: 16,
           title: 'Waldo',
-          image: {waldoImage},
+          image: waldoImage,
           description: "This is a simple version of the popular Where Is Waldo game where you have to find Waldo and some other characters in the image. This project uses Firebase as the backend.",
           links: [
             { url: 'https://github.com/prospero-apps/waldo', destination: 'github' },
@@ -230,7 +266,7 @@ const data = {
         {
           id: 0,
           title: 'GUI Programming with Python and Kivy',
-          image: {kivyBookImage},
+          image: kivyBookImage,
           description: "This is a book for Python developers who want to create GUI apps using this language. One option is to use the Kivy library. In the book a game project is created from scratch.",
           links: [
             { url: 'https://github.com/prospero-apps/python/tree/master/GUI%20Programming%20with%20Python%20and%20Kivy%20BOOK', destination: 'github' },
@@ -241,7 +277,7 @@ const data = {
         {
           id: 1,
           title: 'Learn Over 400 Phrasal Verbs the Fun Way',
-          image: {pvBookImage},
+          image: pvBookImage,
           description: "In this book you will learn over 400 hundred phrasal verbs. Phrasal verbs are verbs that consist of two parts, the actual verb and a particle, like 'stand up', 'get off' or 'turn down', to mention just a few.",
           links: [            
             { url: 'https://www.amazon.com/-/es/Kamil-Pakula/dp/B09RM5XFLS', destination: 'amazon' },
@@ -258,7 +294,7 @@ const data = {
         {
           id: 0,
           title: 'Python Jumpstart Course',
-          image: {pythonCourseImage},
+          image: pythonCourseImage,
           description: "A Python course for absolute beginners. Lots of examples, exercises and projects for you to do. Includes the object-oriented programming paradigm.",
           links: [
             { url: 'https://www.udemy.com/course/python-jumpstart-course', destination: 'udemy' }
@@ -268,7 +304,7 @@ const data = {
         {
           id: 1,
           title: 'Python in Science - Introduction to numpy',
-          image: {numpyCourseImage},
+          image: numpyCourseImage,
           description: "This is a beginner course for Python developers who want to start using Python in science. numpy is the most basic library you should definitely start with.",
           links: [
             { url: 'https://www.skillshare.com/classes/Python-in-Science-%E2%80%93-Introduction-to-numpy/1418900066', destination: 'skillshare' }
@@ -278,7 +314,7 @@ const data = {
         {
           id: 2,
           title: 'Blender Jumpstart Course',
-          image: {blenderCourseImage},
+          image: blenderCourseImage,
           description: "In this course you will learn the very basics of 3D modeling with the open-source app Blender. In the course we're building a model from scratch.",
           links: [
             { url: 'https://www.udemy.com/course/blender-jumpstart-course', destination: 'udemy' },
@@ -289,7 +325,7 @@ const data = {
         {
           id: 3,
           title: 'Advanced English - Learn Over 400 Phrasal Verbs',
-          image: {pvCourseImage},
+          image: pvCourseImage,
           description: "In this course you will learn over 400 phrasal verbs. Phrasal verbs are very popular especially in everyday colloquial language and using them makes you sound more like a native.",
           links: [
             { url: 'https://www.udemy.com/course/advanced-english-learn-over-400-phrasal-verbs/', destination: 'udemy' },
@@ -300,7 +336,7 @@ const data = {
         {
           id: 4,
           title: 'English Tenses',
-          image: {tensesCourseImage},
+          image: tensesCourseImage,
           description: "For many learners of English mastering English tenses isn't easy. In this course all tenses are explained with lots of examples.",
           links: [
             { url: 'https://www.skillshare.com/classes/English-Tenses/804384628', destination: 'skillshare' }
@@ -317,7 +353,7 @@ const data = {
         {
           id: 0,
           title: 'Your Panda3D Magazine',
-          image: {panda3DMagazineImage},
+          image: panda3DMagazineImage,
           description: "This is the first (and so far only) issue of a magazine focused on game development with Python and the Panda3D game engine. There's also quite a lot stuff related to 3D modeling with Blender.",
           links: [
             { url: 'https://www.amazon.com/Your-Panda3D-Magazine-Kamil-Pakula-ebook/dp/B09SR785WV', destination: 'amazon' }
@@ -327,7 +363,7 @@ const data = {
         {
           id: 1,
           title: 'Your American English Magazine',
-          image: {aeMagazineImage},
+          image: aeMagazineImage,
           description: "This is the first (and so far only) issue of Your American English Magazine. There's quite a lot of stuff in it for you that you can use to improve your English, both grammar and vocabulary. Plus some American culture.",
           links: [
             { url: 'https://www.amazon.com/Your-American-English-Magazine-2022-ebook/dp/B09SQCZVF1', destination: 'amazon' }
