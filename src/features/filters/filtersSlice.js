@@ -10,6 +10,20 @@ export const TechFilters = ['html', 'css', 'javascript', 'webpack', 'react', 're
 
 const initialState = data.filters
 
+export const domainFilterChanged = (domain) => {
+  return {
+    type: 'filters/domainFilterChanged',
+    payload: domain
+  }
+}
+
+export const techsFilterChanged = (tech, changeType) => {
+  return {
+    type: 'filters/techsFilterChanged',
+    payload: { tech, changeType }
+  }
+}
+
 export default function filtersReducer(state = initialState, action) {
   switch (action.type) {    
     case 'filters/domainFilterChanged': {

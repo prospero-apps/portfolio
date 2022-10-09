@@ -1,7 +1,9 @@
 import React from 'react'
 import '../../style.css'
-import { DomainFilters, TechFilters } from './filtersSlice'
+import { DomainFilters, TechFilters, domainFilterChanged, techsFilterChanged } from './filtersSlice'
 import { TechFilterIcons } from '../../data'
+import { useSelector, useDispatch } from 'react-redux'
+import { allSectionsExpanded } from '../sections/sectionsSlice'
 
 const DomainFilter = ({ value: domain, onChange }) => {
   const filters = Object.keys(DomainFilters).map((key) => {    
@@ -9,6 +11,8 @@ const DomainFilter = ({ value: domain, onChange }) => {
     const handleClick = () => onChange(value)
     const className = value === domain ? 'domain-selected-button' : 'domain-unselected-button'
     
+    console.log('a ', className, value, domain)
+
     return (
       <li key={value}>
         <button className={className} onClick={handleClick}>
@@ -23,7 +27,6 @@ const DomainFilter = ({ value: domain, onChange }) => {
   )
 }
 
-
 const TechFilter = ({ value: techs, onChange }) => {
   const filters = TechFilters.map((tech) => {
     const checked = techs.includes(tech)
@@ -33,7 +36,7 @@ const TechFilter = ({ value: techs, onChange }) => {
     }
 
     return (
-      <label className='tech-filter-label' key={tech}>
+      <label className='tech-filter-label' data-checked={checked} key={tech}>
         <input
           className='tech-filter-checkbox'
           type='checkbox'
@@ -57,24 +60,36 @@ const TechFilter = ({ value: techs, onChange }) => {
 }
 
 export default function Filters() {
-  const domain = DomainFilters.All
-  const techs = []
+  const { domain, techs } = useSelector(state => state.filters)
 
-  const onDomainChange = (domain) => {
-    console.log('domain: ', domain)
-  }
+  const dispatch = useDispatch() 
 
-  const onTechChange = (tech, changeType) => {
-    console.log('tech: ', { tech, changeType })
-  }
+  const allSectionsAreExpanded = useSelector(state => {
+    return state.sections.every(section => section.expanded)
+  })
+
+  const currentDomain = useSelector(state => state.filters.domain)
+  
+  const onDomainChange = (domain) =>     
+    dispatch(domainFilterChanged(domain))
+    
+  const onTechChange = (tech, changeType) => 
+    dispatch(techsFilterChanged(tech, changeType))
+
+  const handleClick = () => 
+    dispatch(allSectionsExpanded())     
   
   return (
     <div id='filters'>      
       <div className='upper-filter-bar'>
         <DomainFilter value={domain} onChange={onDomainChange} />
-        <button className="expand-button">Expand all sections</button>
+        {!allSectionsAreExpanded
+          && <button className="expand-button" onClick={handleClick}>Expand all sections</button>
+        }
       </div>
-      <TechFilter value={techs} onChange={onTechChange} />
+      {currentDomain !== DomainFilters.English
+        && <TechFilter value={techs} onChange={onTechChange} />
+      }
     </div>
   )
 }

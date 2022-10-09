@@ -2,6 +2,19 @@ import data from "../../data";
 
 const initialState = data.sections
 
+export const sectionExpandedOrCollapsed = (id) => {
+  return {
+    type: 'sections/sectionExpandedOrCollapsed',
+    payload: id
+  }
+}
+
+export const allSectionsExpanded = () => {
+  return {
+    type: 'sections/allSectionsExpanded'
+  }
+}
+
 export default function sectionsReducer(state = initialState, action) {
   switch (action.type) {
     case 'sections/sectionExpandedOrCollapsed': {

@@ -26,16 +26,13 @@ import tensesCourseImage from './images/courses/English Tenses Course.png'
 import panda3DMagazineImage from './images/magazines/Your Panda3D Magazine.png'
 import aeMagazineImage from './images/magazines/Your American English Magazine.png'
 
-
-import { BsFacebook, BsGithub, BsTelephone } from 'react-icons/bs'
-import { AiFillAmazonCircle, AiFillHtml5, AiOutlineMail } from 'react-icons/ai'
-import { SiUdemy, SiSkillshare, SiFirebase, SiTypescript, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender } from 'react-icons/si'
-import { IoLogoYoutube, IoLogoFirebase } from 'react-icons/io'
+import { BsGithub } from 'react-icons/bs'
+import { AiFillAmazonCircle, AiFillHtml5 } from 'react-icons/ai'
+import { SiUdemy, SiSkillshare, SiFirebase, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender } from 'react-icons/si'
 import { DiCss3, DiMongodb } from 'react-icons/di'
 import { TbBrandJavascript } from 'react-icons/tb'
-import { FaNodeJs, FaGitAlt, FaNpm, FaFlagUsa } from 'react-icons/fa'
+import { FaNodeJs, FaFlagUsa } from 'react-icons/fa'
 import { CgWebsite } from 'react-icons/cg'
-
 
 export const TechFilterIcons = {
   'html' : <AiFillHtml5 />,
@@ -375,7 +372,7 @@ const data = {
   ],
   filters: {
     domain: 'all',
-    techs: ['all']
+    techs: ['webpack']
   }
 }
 

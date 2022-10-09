@@ -10,18 +10,6 @@ const unsubscribe = store.subscribe(() =>
   console.log('State after dispatch: ', store.getState())
 )
 
-// store.dispatch({ type: 'sections/sectionExpandedOrCollapsed', payload: 0})
-// store.dispatch({ type: 'sections/allSectionsExpanded' })
-// store.dispatch({ type: 'filters/domainFilterChanged', payload: 'english'})
-// store.dispatch({ type: 'filters/techsFilterChanged', payload: { tech: 'react', changeType: 'added' } })
-
-// unsubscribe()
-
-// store.dispatch({ type: 'sections/sectionExpandedOrCollapsed', payload: 2})
-
-
-
-
 const container = document.getElementById('root');
 const root = createRoot(container);
 
