@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0aee247b.css",
+    "main.js": "/portfolio/static/js/main.0582f222.js",
+    "static/media/Prospero Blender YT Banner.png": "/portfolio/static/media/Prospero Blender YT Banner.d3927b921fa8540d6cad.png",
+    "static/media/English Tenses Course.png": "/portfolio/static/media/English Tenses Course.9bacc7757c28924f6667.png",
+    "static/media/Prospero Coder YT Banner.png": "/portfolio/static/media/Prospero Coder YT Banner.1c61eeefc891395d8bb5.png",
+    "static/media/restaurant-page.png": "/portfolio/static/media/restaurant-page.34cb0b5e51075dc193ac.png",
+    "static/media/Python Jumpstart Course.png": "/portfolio/static/media/Python Jumpstart Course.60ce248053f25e734c18.png",
+    "static/media/Prospero English YT Banner.png": "/portfolio/static/media/Prospero English YT Banner.f773a8b7c1b4a863569a.png",
+    "static/media/Phrasal Verbs Course.png": "/portfolio/static/media/Phrasal Verbs Course.906cdffd1d4a31f25c47.png",
+    "static/media/Blender Jumpstart Course.png": "/portfolio/static/media/Blender Jumpstart Course.a782e8d0c1b08b4ed1b3.png",
+    "static/media/battleship.png": "/portfolio/static/media/battleship.37798b5c64700764af69.png",
+    "static/media/Your American English Magazine.png": "/portfolio/static/media/Your American English Magazine.51cb073953353b128d9c.png",
+    "static/media/todo-list.png": "/portfolio/static/media/todo-list.16ae5d964fbff0bbbb99.png",
+    "static/media/memory-card-react.png": "/portfolio/static/media/memory-card-react.e7167ae26ba93762c505.png",
+    "static/media/waldo.png": "/portfolio/static/media/waldo.1f642d98d36122261d5e.png",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.1484570f5797361f6306.png",
+    "static/media/head.png": "/portfolio/static/media/head.70aa0a6eeacbe4fb513f.png",
+    "static/media/Your Panda3D Magazine.png": "/portfolio/static/media/Your Panda3D Magazine.4c14d6f05edcdedcddcb.png",
+    "static/media/store-react.png": "/portfolio/static/media/store-react.7664b771244394209da1.png",
+    "static/media/signup-form.png": "/portfolio/static/media/signup-form.e7a73e942b725744806e.png",
+    "static/media/PhrasalVerbs.png": "/portfolio/static/media/PhrasalVerbs.33cec1cd64222548e73f.png",
+    "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.587a600e54d3b2be05eb.png",
+    "static/media/Kivy.png": "/portfolio/static/media/Kivy.2fc6a8968a9d2d7a9c02.png",
+    "static/media/calculator.png": "/portfolio/static/media/calculator.4bd8ce3d85c17ee429a0.png",
+    "static/media/library.png": "/portfolio/static/media/library.c6f399f77c925633218a.png",
+    "static/media/cv-project.png": "/portfolio/static/media/cv-project.f69b3cde588598d1f209.png",
+    "static/media/landing-page.png": "/portfolio/static/media/landing-page.d45d08e5000208cd926a.png",
+    "static/media/Logo Prospero Coder.png": "/portfolio/static/media/Logo Prospero Coder.083f9fec9dc1105da22b.png",
+    "static/media/Logo Prospero English.png": "/portfolio/static/media/Logo Prospero English.6c8291c28c74357230b6.png",
+    "static/media/etch-a-sketch.png": "/portfolio/static/media/etch-a-sketch.480094dc8a7f65bd887f.png",
+    "index.html": "/portfolio/index.html",
+    "main.0aee247b.css.map": "/portfolio/static/css/main.0aee247b.css.map",
+    "main.0582f222.js.map": "/portfolio/static/js/main.0582f222.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aee247b.css",
+    "static/js/main.0582f222.js"
+  ]
+}
