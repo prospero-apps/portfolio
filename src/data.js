@@ -15,7 +15,12 @@ import cvProjectImage from './images/web-projects/cv-project.png'
 import memoryCardImage from './images/web-projects/memory-card-react.png'
 import storeImage from './images/web-projects/store-react.png'
 import waldoImage from './images/web-projects/waldo.png'
-// import portfolioImage from './images/web-projects/portfolio.png'
+import portfolioImage from './images/web-projects/portfolio.png'
+import miniMessageBoardImage from './images/web-projects/mini-message-board.png'
+import inventoryManagementImage from './images/web-projects/inventory-management.png'
+import membersOnlyImage from './images/web-projects/members-only.png'
+import blogCMSImage from './images/web-projects/blog-cms.png'
+
 import kivyBookImage from './images/books/Kivy.png'
 import pvBookImage from './images/books/PhrasalVerbs.png'
 import pythonCourseImage from './images/courses/Python Jumpstart Course.png'
@@ -28,7 +33,7 @@ import aeMagazineImage from './images/magazines/Your American English Magazine.p
 
 import { BsGithub } from 'react-icons/bs'
 import { AiFillAmazonCircle, AiFillHtml5 } from 'react-icons/ai'
-import { SiUdemy, SiSkillshare, SiFirebase, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender } from 'react-icons/si'
+import { SiUdemy, SiSkillshare, SiFirebase, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender, SiPug } from 'react-icons/si'
 import { DiCss3, DiMongodb } from 'react-icons/di'
 import { TbBrandJavascript } from 'react-icons/tb'
 import { FaNodeJs, FaFlagUsa } from 'react-icons/fa'
@@ -46,6 +51,7 @@ export const TechFilterIcons = {
   'mongodb' : <DiMongodb />, 
   'nodejs' : <FaNodeJs />, 
   'express' : <SiExpress />,
+  'pug' : <SiPug />,
   'python' : <SiPython />,
   'blender' : <SiBlender />,
   'english' : <FaFlagUsa />
@@ -103,7 +109,7 @@ const data = {
           id: 3,
           title: 'Etch A Sketch',
           image: etchASketchImage,
-          description: "This is a sort of painting app when you can draw by hovering your mouse over a canvas of squared. They're then filled in with a random color. You can also change the resolution.",
+          description: "This is a sort of painting app where you can draw by hovering your mouse over a canvas of squares. They're then filled in with a random color. You can also change the resolution.",
           links: [
             { url: 'https://github.com/prospero-apps/etch-a-sketch', destination: 'github' },
             { url: 'https://prospero-apps.github.io/etch-a-sketch', destination: 'live' },
@@ -141,7 +147,7 @@ const data = {
             { url: 'https://github.com/prospero-apps/admin-dashboard', destination: 'github' },
             { url: 'https://prospero-apps.github.io/admin-dashboard', destination: 'live' },
           ],
-          technologies: ['html', 'css', 'javascript']
+          technologies: ['html', 'css']
         },
         {
           id: 7,
@@ -191,7 +197,7 @@ const data = {
           id: 11,
           title: 'Weather App',
           image: weatherAppImage,
-          description: "Using this application you can check the weather in any major city around the globe. The app uses asynchronous JavaScript and calls to APIs.",
+          description: "Using this application you can check the weather in any major city around the globe. The app uses asynchronous JavaScript and calls to APIs (openweathermap and giphy).",
           links: [
             { url: 'https://github.com/prospero-apps/weather-app', destination: 'github' },
             { url: 'https://prospero-apps.github.io/weather-app', destination: 'live' },
@@ -252,6 +258,61 @@ const data = {
             { url: 'https://prospero-apps.github.io/waldo', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'react', 'firebase']
+        },
+        {
+          id: 17,
+          title: 'Portfolio',
+          image: portfolioImage,
+          description: "My portfolio. Here you can see my progress from basic only-HTML pages to fullstack apps with REST API integration. Also some other stuff that I created, all with links.",
+          links: [
+            { url: 'https://github.com/prospero-apps/portfolio', destination: 'github' },
+            { url: 'https://prospero-apps.github.io/portfolio', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'react', 'redux']
+        },
+        {
+          id: 18,
+          title: 'Mini Message Board',
+          image: miniMessageBoardImage,
+          description: "This is a very basic Express app that you can use to write and read messages. It uses the PUG template to render the views.",
+          links: [
+            { url: 'https://github.com/prospero-apps/mini-message-board', destination: 'github' },
+            { url: 'https://warm-dawn-98789.herokuapp.com', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug']
+        },
+        {
+          id: 19,
+          title: 'Members Only',
+          image: membersOnlyImage,
+          description: "Backend app created with Express and the MongoDB database (with mongoose). You can log in with username Lanny and password llllaaaa. You can become member (to see authors) or admin (to delete messages).",
+          links: [
+            { url: 'https://github.com/prospero-apps/members-only', destination: 'github' },
+            { url: 'https://murmuring-mountain-62350.herokuapp.com', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug', 'mongodb']
+        },
+        {
+          id: 20,
+          title: 'Inventory Management App',
+          image: inventoryManagementImage,
+          description: "You can use this app to manage your inventory of houseplants. You can view the plants by category, create new plants and new categories.",
+          links: [
+            { url: 'https://github.com/prospero-apps/inventory-management-app', destination: 'github' },
+            { url: 'https://young-coast-25171.herokuapp.com', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug', 'mongodb']
+        },
+        {
+          id: 21,
+          title: 'Blog api + client + cms',
+          image: blogCMSImage,
+          description: "A fullstack blogging project consisting of three apps: the backend app that provides a RESTful API and two client apps. JWT authentication is implemented.",
+          links: [
+            { url: 'https://github.com/prospero-apps/blog-api', destination: 'github' },
+            { url: 'https://prospero-apps.github.io/blog-cms', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'react', 'nodejs', 'express', 'mongodb']
         }
       ]
     },
@@ -372,7 +433,7 @@ const data = {
   ],
   filters: {
     domain: 'all',
-    techs: ['webpack']
+    techs: []
   }
 }
 
