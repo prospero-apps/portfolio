@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f0ada13e.css",
-    "main.js": "/portfolio/static/js/main.14994564.js",
+    "main.js": "/portfolio/static/js/main.8f44b0d5.js",
     "static/media/Prospero Blender YT Banner.png": "/portfolio/static/media/Prospero Blender YT Banner.d3927b921fa8540d6cad.png",
     "static/media/English Tenses Course.png": "/portfolio/static/media/English Tenses Course.9bacc7757c28924f6667.png",
     "static/media/Prospero Coder YT Banner.png": "/portfolio/static/media/Prospero Coder YT Banner.1c61eeefc891395d8bb5.png",
@@ -24,23 +24,28 @@
     "static/media/signup-form.png": "/portfolio/static/media/signup-form.e7a73e942b725744806e.png",
     "static/media/PhrasalVerbs.png": "/portfolio/static/media/PhrasalVerbs.33cec1cd64222548e73f.png",
     "static/media/members-only.png": "/portfolio/static/media/members-only.98d756cbb95cb23a520c.png",
+    "static/media/my-vocab-vue-pinia.png": "/portfolio/static/media/my-vocab-vue-pinia.7ab985ffc23aa34ddad7.png",
+    "static/media/quiz-vue.png": "/portfolio/static/media/quiz-vue.d6549edb78427e51cdca.png",
     "static/media/inventory-management.png": "/portfolio/static/media/inventory-management.6bb6a95550f697e2d8c9.png",
+    "static/media/showoff-react-typescript.png": "/portfolio/static/media/showoff-react-typescript.c4a099dd7bb619924234.png",
     "static/media/admin-dashboard.png": "/portfolio/static/media/admin-dashboard.587a600e54d3b2be05eb.png",
     "static/media/Kivy.png": "/portfolio/static/media/Kivy.2fc6a8968a9d2d7a9c02.png",
     "static/media/calculator.png": "/portfolio/static/media/calculator.4bd8ce3d85c17ee429a0.png",
     "static/media/library.png": "/portfolio/static/media/library.c6f399f77c925633218a.png",
     "static/media/cv-project.png": "/portfolio/static/media/cv-project.f69b3cde588598d1f209.png",
+    "static/media/teams.png": "/portfolio/static/media/teams.35715de57ed378dcf64c.png",
     "static/media/landing-page.png": "/portfolio/static/media/landing-page.d45d08e5000208cd926a.png",
     "static/media/mini-message-board.png": "/portfolio/static/media/mini-message-board.e7da03e1768256dbb9d2.png",
+    "static/media/ticket-generator.png": "/portfolio/static/media/ticket-generator.4cc262fe4c19175bb6e2.png",
     "static/media/Logo Prospero Coder.png": "/portfolio/static/media/Logo Prospero Coder.083f9fec9dc1105da22b.png",
     "static/media/Logo Prospero English.png": "/portfolio/static/media/Logo Prospero English.6c8291c28c74357230b6.png",
     "static/media/etch-a-sketch.png": "/portfolio/static/media/etch-a-sketch.480094dc8a7f65bd887f.png",
     "index.html": "/portfolio/index.html",
     "main.f0ada13e.css.map": "/portfolio/static/css/main.f0ada13e.css.map",
-    "main.14994564.js.map": "/portfolio/static/js/main.14994564.js.map"
+    "main.8f44b0d5.js.map": "/portfolio/static/js/main.8f44b0d5.js.map"
   },
   "entrypoints": [
     "static/css/main.f0ada13e.css",
-    "static/js/main.14994564.js"
+    "static/js/main.8f44b0d5.js"
   ]
 }
