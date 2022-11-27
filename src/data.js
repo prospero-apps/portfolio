@@ -286,7 +286,7 @@ const data = {
           description: "This is a very basic Express app that you can use to write and read messages. It uses the PUG template to render the views.",
           links: [
             { url: 'https://github.com/prospero-apps/mini-message-board', destination: 'github' },
-            { url: 'https://warm-dawn-98789.herokuapp.com', destination: 'live' },
+            // { url: 'https://warm-dawn-98789.herokuapp.com', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug']
         },
@@ -297,7 +297,7 @@ const data = {
           description: "Backend app created with Express and the MongoDB database (with mongoose). You can log in with username Lanny and password llllaaaa. You can become member (to see authors) or admin (to delete messages).",
           links: [
             { url: 'https://github.com/prospero-apps/members-only', destination: 'github' },
-            { url: 'https://murmuring-mountain-62350.herokuapp.com', destination: 'live' },
+            // { url: 'https://murmuring-mountain-62350.herokuapp.com', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug', 'mongodb']
         },
@@ -308,7 +308,7 @@ const data = {
           description: "You can use this app to manage your inventory of houseplants. You can view the plants by category, create new plants and new categories.",
           links: [
             { url: 'https://github.com/prospero-apps/inventory-management-app', destination: 'github' },
-            { url: 'https://young-coast-25171.herokuapp.com', destination: 'live' },
+            // { url: 'https://young-coast-25171.herokuapp.com', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'nodejs', 'express', 'pug', 'mongodb']
         },
@@ -319,7 +319,7 @@ const data = {
           description: "A fullstack blogging project consisting of three apps: the backend app that provides a RESTful API and two client apps. JWT authentication is implemented.",
           links: [
             { url: 'https://github.com/prospero-apps/blog-api', destination: 'github' },
-            { url: 'https://prospero-apps.github.io/blog-cms', destination: 'live' },
+            // { url: 'https://prospero-apps.github.io/blog-cms', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'react', 'nodejs', 'express', 'mongodb']
         },
