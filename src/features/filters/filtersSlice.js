@@ -6,7 +6,7 @@ export const DomainFilters = {
   English: 'english'
 }
 
-export const TechFilters = ['html', 'css', 'javascript', 'webpack', 'react', 'redux', 'jest', 'firebase', 'mongodb', 'nodejs', 'express', 'python', 'blender']
+export const TechFilters = ['html', 'css', 'javascript', 'typescript', 'webpack', 'react', 'vue', 'angular', 'redux', 'jest', 'firebase', 'mongodb', 'nodejs', 'express', 'python', 'blender']
 
 const initialState = data.filters
 

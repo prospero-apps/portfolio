@@ -10,9 +10,7 @@ const DomainFilter = ({ value: domain, onChange }) => {
     const value = DomainFilters[key]
     const handleClick = () => onChange(value)
     const className = value === domain ? 'domain-selected-button' : 'domain-unselected-button'
-    
-    console.log('a ', className, value, domain)
-
+   
     return (
       <li key={value}>
         <button className={className} onClick={handleClick}>

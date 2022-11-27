@@ -21,6 +21,12 @@ import inventoryManagementImage from './images/web-projects/inventory-management
 import membersOnlyImage from './images/web-projects/members-only.png'
 import blogCMSImage from './images/web-projects/blog-cms.png'
 
+import showoffImage from './images/web-projects/showoff-react-typescript.png'
+import teamsImage from './images/web-projects/teams.png'
+import quizImage from './images/web-projects/quiz-vue.png'
+import myVocabImage from './images/web-projects/my-vocab-vue-pinia.png'
+import ticketGeneratorImage from './images/web-projects/ticket-generator.png'
+
 import kivyBookImage from './images/books/Kivy.png'
 import pvBookImage from './images/books/PhrasalVerbs.png'
 import pythonCourseImage from './images/courses/Python Jumpstart Course.png'
@@ -33,10 +39,10 @@ import aeMagazineImage from './images/magazines/Your American English Magazine.p
 
 import { BsGithub } from 'react-icons/bs'
 import { AiFillAmazonCircle, AiFillHtml5 } from 'react-icons/ai'
-import { SiUdemy, SiSkillshare, SiFirebase, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender, SiPug } from 'react-icons/si'
+import { SiUdemy, SiSkillshare, SiFirebase, SiReact, SiRedux, SiExpress, SiJest, SiWebpack, SiPython, SiBlender, SiPug, SiTypescript } from 'react-icons/si'
 import { DiCss3, DiMongodb } from 'react-icons/di'
 import { TbBrandJavascript } from 'react-icons/tb'
-import { FaNodeJs, FaFlagUsa } from 'react-icons/fa'
+import { FaNodeJs, FaFlagUsa, FaVuejs, FaAngular } from 'react-icons/fa'
 import { CgWebsite } from 'react-icons/cg'
 
 export const TechFilterIcons = {
@@ -52,6 +58,9 @@ export const TechFilterIcons = {
   'nodejs' : <FaNodeJs />, 
   'express' : <SiExpress />,
   'pug' : <SiPug />,
+  'vue': <FaVuejs />,
+  'angular': <FaAngular />,
+  'typescript': <SiTypescript />,
   'python' : <SiPython />,
   'blender' : <SiBlender />,
   'english' : <FaFlagUsa />
@@ -313,6 +322,58 @@ const data = {
             { url: 'https://prospero-apps.github.io/blog-cms', destination: 'live' },
           ],
           technologies: ['html', 'css', 'javascript', 'webpack', 'react', 'nodejs', 'express', 'mongodb']
+        },
+        {
+          id: 22,
+          title: 'Show Off',
+          image: showoffImage,
+          description: "This is a simple website where you can show off your works and brag. You can add an image of your creation and some info about it.",
+          links: [
+            { url: 'https://github.com/prospero-apps/showoff-react-typescript', destination: 'github' },
+            { url: 'https://prospero-apps.github.io/showoff-react-typescript', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'typescript', 'webpack', 'react']
+        },
+        {
+          id: 23,
+          title: 'Teams',
+          image: teamsImage,
+          description: "You can use this website to create teams and add members to them. A very basic implementation with no storage implemented.",
+          links: [
+            { url: 'https://github.com/prospero-apps/teams', destination: 'github' },
+            { url: 'https://prospero-apps.github.io/teams', destination: 'live' },
+          ],
+          technologies: ['html', 'css', 'typescript', 'webpack', 'react', 'redux']
+        },
+        {
+          id: 24,
+          title: 'Quiz',
+          image: quizImage,
+          description: "Here you can choose a category and solve a quiz. This is my first project with Vue.",
+          links: [
+            { url: 'https://github.com/prospero-apps/quiz-vue', destination: 'github' }
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'vue']
+        },
+        {
+          id: 25,
+          title: 'My Vocab',
+          image: myVocabImage,
+          description: "Here's a simple website where you can add new vocabulary in several categories. The Pinia store is implemented here to take care of the state.",
+          links: [
+            { url: 'https://github.com/prospero-apps/my-vocab-vue-pinia', destination: 'github' },
+          ],
+          technologies: ['html', 'css', 'javascript', 'webpack', 'vue']
+        },
+        {
+          id: 26,
+          title: 'Ticket Generator',
+          image: ticketGeneratorImage,
+          description: "This is a very basic Angular website where you enter some data about a movie in a movie theater with a given number of rows and seats in each row and a ticket is generated for you.",
+          links: [
+            { url: 'https://github.com/prospero-apps/ticket-generator', destination: 'github' },
+          ],
+          technologies: ['html', 'css', 'typescript', 'webpack', 'angular']
         }
       ]
     },
